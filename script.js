@@ -1,14 +1,18 @@
-const playersRange = document.getElementById('playersRange');
-const playersValue = document.getElementById('playersValue');
-const confirmBtn = document.getElementById('confirmBtn');
+function initHomePage() {
+  const playersRange = document.getElementById('playersRange');
+  const playersValue = document.getElementById('playersValue');
+  const confirmBtn = document.getElementById('confirmBtn');
 
-if (playersRange && playersValue) {
+  if (!playersRange || !playersValue || !confirmBtn) {
+    return;
+  }
+
+  playersValue.textContent = String(playersRange.value);
+
   playersRange.addEventListener('input', (event) => {
     playersValue.textContent = event.target.value;
   });
-}
 
-if (confirmBtn) {
   confirmBtn.addEventListener('click', () => {
     const selectedPlayers = Number(playersRange.value);
     localStorage.setItem('selectedPlayers', String(selectedPlayers));
@@ -26,7 +30,7 @@ function renderGamesPage() {
   const noGames = document.getElementById('noGames');
   const title = document.getElementById('gamesTitle');
 
-  if (!list) {
+  if (!list || !Array.isArray(games)) {
     return;
   }
 
@@ -77,7 +81,7 @@ function renderGamesPage() {
 function renderGameDetailsPage() {
   const detailsContainer = document.getElementById('gameDetails');
 
-  if (!detailsContainer) {
+  if (!detailsContainer || !Array.isArray(games)) {
     return;
   }
 
@@ -103,10 +107,16 @@ function renderGameDetailsPage() {
   `;
 }
 
-if (document.getElementById('gamesList')) {
-  renderGamesPage();
+function initPage() {
+  initHomePage();
+
+  if (document.getElementById('gamesList')) {
+    renderGamesPage();
+  }
+
+  if (document.getElementById('gameDetails')) {
+    renderGameDetailsPage();
+  }
 }
 
-if (document.getElementById('gameDetails')) {
-  renderGameDetailsPage();
-}
+initPage();
