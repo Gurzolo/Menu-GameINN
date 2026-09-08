@@ -93,6 +93,8 @@ function renderGameDetailsPage() {
     return;
   }
 
+  const detailsLink = game.pdfLink || game.link;
+
   detailsContainer.innerHTML = `
     <div class="details-card">
       <img src="${game.image}" alt="${game.title}" />
@@ -101,7 +103,7 @@ function renderGameDetailsPage() {
         <h1>${game.title}</h1>
         <p>${game.description}</p>
         <p><strong>Giocatori:</strong> ${game.players}</p>
-        <a href="${game.link}" class="details-link">Apri collegamento</a>
+        <a href="${detailsLink}" class="details-link" target="_blank" rel="noopener noreferrer">Apri collegamento</a>
       </div>
     </div>
   `;

@@ -6,7 +6,8 @@ const games = [
     description: 'Un classico strategico per costruire insediamenti, raccogliere risorse e dominare la tavola.',
     tag: 'Strategia',
     players: 4,
-    link: 'game-details.html?id=catan'
+    link: 'game-details.html?id=catan',
+    pdfLink: 'regolamenti/regolamento%20catan.pdf'
   },
   {
     id: 'uno',
