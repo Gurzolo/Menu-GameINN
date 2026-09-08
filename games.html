@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giochi disponibili</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container games-container">
+      <a href="index.html" class="back-link">← Torna alla home</a>
+      <h1 id="gamesTitle">Giochi disponibili</h1>
+
+      <div id="gamesList" class="cards-grid"></div>
+      <p id="noGames" class="no-games" style="display: none;">
+        Nessun gioco trovato per questo numero di giocatori.
+      </p>
+    </main>
+
+    <script src="games-data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -3,16 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello World</title>
+    <title>Quanti giocatori?</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main class="container">
-      <h1 id="title">Hello World</h1>
-      <p id="subtitle">Progetto HTML, CSS e JavaScript pronto per GitHub Pages.</p>
-      <button id="changeTextBtn" type="button">Cambia messaggio</button>
+    <main class="container home-container">
+      <h1>Quanti giocatori?</h1>
+
+      <div class="slider-wrap">
+        <label for="playersRange" class="sr-only">Numero di giocatori</label>
+        <input
+          id="playersRange"
+          type="range"
+          min="1"
+          max="12"
+          step="1"
+          value="4"
+        />
+        <div class="value-box">
+          <span id="playersValue">4</span>
+        </div>
+      </div>
+
+      <button id="confirmBtn" type="button">Conferma</button>
     </main>
 
+    <script src="games-data.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
