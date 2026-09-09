@@ -35,7 +35,12 @@ function renderGamesPage() {
   }
 
   const selectedPlayers = getSelectedPlayers();
-  const filteredGames = games.filter((game) => game.players === selectedPlayers);
+  const filteredGames = games.filter((game) => {
+    const minPlayers = Number.isFinite(game.minPlayers) ? game.minPlayers : game.players ?? 1;
+    const maxPlayers = Number.isFinite(game.maxPlayers) ? game.maxPlayers : game.players ?? minPlayers;
+
+    return selectedPlayers >= minPlayers && selectedPlayers <= maxPlayers;
+  });
 
   if (title) {
     title.textContent = `Giochi per ${selectedPlayers} giocatori`;
@@ -94,6 +99,9 @@ function renderGameDetailsPage() {
   }
 
   const detailsLink = game.pdfLink || game.link;
+  const minPlayers = Number.isFinite(game.minPlayers) ? game.minPlayers : game.players ?? 1;
+  const maxPlayers = Number.isFinite(game.maxPlayers) ? game.maxPlayers : game.players ?? minPlayers;
+  const playersText = minPlayers === maxPlayers ? `${minPlayers}` : `${minPlayers}-${maxPlayers}`;
 
   detailsContainer.innerHTML = `
     <div class="details-card">
@@ -102,7 +110,7 @@ function renderGameDetailsPage() {
         <span class="tag">${game.tag}</span>
         <h1>${game.title}</h1>
         <p>${game.description}</p>
-        <p><strong>Giocatori:</strong> ${game.players}</p>
+        <p><strong>Giocatori:</strong> ${playersText}</p>
         <a href="${detailsLink}" class="details-link" target="_blank" rel="noopener noreferrer">Apri collegamento</a>
       </div>
     </div>
