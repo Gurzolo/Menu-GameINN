@@ -17,12 +17,12 @@ function initHomePage() {
     const isActive = savedCategories.includes(category);
 
     button.classList.toggle('active', isActive);
-    button.textContent = `${category}: ${isActive ? 'ON' : 'OFF'}`;
+    button.setAttribute('aria-pressed', String(isActive));
 
     button.addEventListener('click', () => {
       const nextState = !button.classList.contains('active');
       button.classList.toggle('active', nextState);
-      button.textContent = `${category}: ${nextState ? 'ON' : 'OFF'}`;
+      button.setAttribute('aria-pressed', String(nextState));
       saveEnabledCategories();
     });
   });
@@ -50,7 +50,7 @@ function getEnabledCategories() {
   if (storedCategories) {
     try {
       const parsed = JSON.parse(storedCategories);
-      if (Array.isArray(parsed) && parsed.length > 0) {
+      if (Array.isArray(parsed)) {
         return parsed;
       }
     } catch (error) {

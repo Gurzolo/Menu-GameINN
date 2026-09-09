@@ -53,8 +53,8 @@ p {
 }
 
 .toggle-btn {
-  background: #1e293b;
-  color: #e2e8f0;
+  background: #64748b;
+  color: #f8fafc;
   border: 1px solid rgba(255, 255, 255, 0.15);
   padding: 0.8rem 1.2rem;
 }
