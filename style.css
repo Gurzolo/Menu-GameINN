@@ -1,24 +1,5 @@
-:root {
-  --bg-dark: #3c1718;
-  --bg-deep: #2d1011;
-  --panel: rgba(61, 19, 21, 0.75);
-  --panel-strong: rgba(95, 27, 28, 0.92);
-  --gold: #e7b860;
-  --gold-soft: #f4d58c;
-  --cream: #f2ebdd;
-  --navy: #1e2d38;
-  --red: #af3c2e;
-  --orange: #d28a38;
-  --teal: #6d8d86;
-  --shadow: rgba(22, 7, 8, 0.45);
-}
-
 * {
   box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 body {
@@ -27,136 +8,33 @@ body {
   display: grid;
   place-items: center;
   font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(180deg, #4e1b1d 0%, #3d1517 100%);
-  color: var(--cream);
+  background: linear-gradient(135deg, #0f172a, #1d4ed8);
+  color: #f8fafc;
 }
 
 .container {
   width: min(1100px, calc(100% - 2rem));
-  background: var(--panel);
-  border: 1px solid rgba(231, 184, 96, 0.5);
-  border-radius: 24px;
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 22px;
   padding: 2rem;
-  box-shadow: 0 25px 45px var(--shadow);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
 }
 
 .home-container {
-  max-width: 760px;
+  max-width: 700px;
   text-align: center;
-  padding-top: 1.5rem;
-}
-
-.page-header {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1.5rem;
-}
-
-.brand-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.logo-hex {
-  position: relative;
-  width: min(320px, 62vw);
-  aspect-ratio: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(135deg, #972d22, #5a1f1f);
-  clip-path: polygon(25% 6%, 75% 6%, 96% 50%, 75% 94%, 25% 94%, 4% 50%);
-  border: 4px solid var(--gold);
-  box-shadow: 0 0 0 6px rgba(231, 184, 96, 0.25), 0 20px 30px rgba(0, 0, 0, 0.25);
-}
-
-.logo-inner {
-  width: 82%;
-  height: 82%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid rgba(244, 213, 140, 0.7);
-  background: rgba(84, 26, 26, 0.28);
-  clip-path: polygon(25% 6%, 75% 6%, 96% 50%, 75% 94%, 25% 94%, 4% 50%);
-}
-
-.brand-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: var(--cream);
-  font-family: Georgia, 'Times New Roman', serif;
-  line-height: 0.9;
-}
-
-.brand-game {
-  font-size: clamp(1.7rem, 4vw, 3rem);
-  font-weight: 700;
-}
-
-.brand-inn {
-  font-size: clamp(2.3rem, 5vw, 4rem);
-  font-weight: 700;
-}
-
-.logo-icons {
-  display: flex;
-  justify-content: center;
-  gap: 0.7rem;
-  margin-top: 0.5rem;
-}
-
-.icon {
-  display: block;
-  width: 18px;
-  height: 18px;
-  border-radius: 4px;
-  border: 2px solid var(--cream);
-  background: rgba(242, 235, 221, 0.12);
-  position: relative;
-}
-
-.icon-1::before,
-.icon-2::before,
-.icon-3::before {
-  content: "";
-  position: absolute;
-  inset: 3px;
-  background: rgba(242, 235, 221, 0.7);
-  border-radius: 2px;
-}
-
-.icon-2 {
-  border-radius: 50%;
-}
-
-.icon-2::before {
-  border-radius: 50%;
-}
-
-.icon-3 {
-  width: 12px;
-  height: 12px;
-  border-radius: 2px;
-  transform: rotate(45deg);
 }
 
 h1 {
-  margin: 1rem 0 1rem;
+  margin: 0 0 1rem;
   font-size: clamp(2rem, 5vw, 3.2rem);
-  color: var(--cream);
 }
 
 p {
   margin: 0 0 1.5rem;
   font-size: 1.05rem;
-  color: #f1e6d3;
+  color: #dbeafe;
 }
 
 .slider-wrap {
@@ -168,36 +46,34 @@ p {
 
 #playersRange {
   flex: 1;
-  accent-color: var(--gold);
+  accent-color: #facc15;
 }
 
 .value-box {
   min-width: 70px;
   padding: 0.8rem 1rem;
   border-radius: 12px;
-  background: var(--panel-strong);
-  border: 1px solid rgba(244, 213, 140, 0.7);
+  background: #1e293b;
+  border: 1px solid rgba(255, 255, 255, 0.15);
   font-size: 1.1rem;
   font-weight: 700;
-  color: var(--cream);
 }
 
 button {
   border: none;
   border-radius: 999px;
-  background: linear-gradient(135deg, var(--gold), var(--gold-soft));
-  color: var(--bg-deep);
+  background: #facc15;
+  color: #111827;
   padding: 0.85rem 1.4rem;
   font-size: 1rem;
   font-weight: 700;
   cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 button:hover {
   transform: translateY(-1px);
-  box-shadow: 0 12px 24px rgba(231, 184, 96, 0.3);
-  filter: brightness(1.05);
+  box-shadow: 0 10px 20px rgba(250, 204, 21, 0.35);
 }
 
 .cards-grid {
@@ -213,11 +89,11 @@ button:hover {
   text-align: left;
   overflow: hidden;
   min-height: 100%;
-  background: rgba(33, 14, 14, 0.85);
-  border: 1px solid rgba(231, 184, 96, 0.5);
+  background: rgba(30, 41, 59, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 18px;
   padding: 0;
-  color: var(--cream);
+  color: #f8fafc;
 }
 
 .game-card img {
@@ -235,8 +111,8 @@ button:hover {
   margin-bottom: 0.6rem;
   padding: 0.35rem 0.6rem;
   border-radius: 999px;
-  background: rgba(231, 184, 96, 0.2);
-  color: var(--gold-soft);
+  background: rgba(250, 204, 21, 0.2);
+  color: #fef3c7;
   font-size: 0.8rem;
   font-weight: 700;
 }
@@ -244,18 +120,17 @@ button:hover {
 .card-content h3 {
   margin: 0 0 0.5rem;
   font-size: 1.3rem;
-  color: var(--cream);
 }
 
 .card-content p {
   margin: 0;
-  color: #f1e6d3;
+  color: #dbeafe;
 }
 
 .back-link {
   display: inline-block;
   margin-bottom: 1rem;
-  color: var(--gold-soft);
+  color: #facc15;
   text-decoration: none;
   font-weight: 700;
 }
@@ -263,7 +138,7 @@ button:hover {
 .no-games {
   margin-top: 1rem;
   text-align: center;
-  color: #f9c3b7;
+  color: #fca5a5;
 }
 
 .details-card {
@@ -278,18 +153,16 @@ button:hover {
   border-radius: 18px;
   min-height: 280px;
   object-fit: cover;
-  border: 2px solid rgba(231, 184, 96, 0.45);
 }
 
 .details-content h1 {
   margin-bottom: 0.8rem;
-  color: var(--cream);
 }
 
 .details-link {
   display: inline-block;
   margin-top: 1rem;
-  color: var(--gold-soft);
+  color: #facc15;
   font-weight: 700;
   text-decoration: none;
 }
@@ -307,10 +180,6 @@ button:hover {
 }
 
 @media (max-width: 600px) {
-  .container {
-    padding: 1.25rem;
-  }
-
   .slider-wrap {
     flex-direction: column;
   }
