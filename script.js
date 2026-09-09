@@ -2,12 +2,30 @@ function initHomePage() {
   const playersRange = document.getElementById('playersRange');
   const playersValue = document.getElementById('playersValue');
   const confirmBtn = document.getElementById('confirmBtn');
+  const toggleButtons = document.querySelectorAll('.toggle-btn');
 
   if (!playersRange || !playersValue || !confirmBtn) {
     return;
   }
 
+  const savedCategories = getEnabledCategories();
+
   playersValue.textContent = String(playersRange.value);
+
+  toggleButtons.forEach((button) => {
+    const category = button.dataset.category;
+    const isActive = savedCategories.includes(category);
+
+    button.classList.toggle('active', isActive);
+    button.textContent = `${category}: ${isActive ? 'ON' : 'OFF'}`;
+
+    button.addEventListener('click', () => {
+      const nextState = !button.classList.contains('active');
+      button.classList.toggle('active', nextState);
+      button.textContent = `${category}: ${nextState ? 'ON' : 'OFF'}`;
+      saveEnabledCategories();
+    });
+  });
 
   playersRange.addEventListener('input', (event) => {
     playersValue.textContent = event.target.value;
@@ -16,6 +34,7 @@ function initHomePage() {
   confirmBtn.addEventListener('click', () => {
     const selectedPlayers = Number(playersRange.value);
     localStorage.setItem('selectedPlayers', String(selectedPlayers));
+    saveEnabledCategories();
     window.location.href = 'games.html';
   });
 }
@@ -23,6 +42,32 @@ function initHomePage() {
 function getSelectedPlayers() {
   const storedPlayers = localStorage.getItem('selectedPlayers');
   return storedPlayers ? Number(storedPlayers) : 1;
+}
+
+function getEnabledCategories() {
+  const storedCategories = localStorage.getItem('enabledCategories');
+
+  if (storedCategories) {
+    try {
+      const parsed = JSON.parse(storedCategories);
+      if (Array.isArray(parsed) && parsed.length > 0) {
+        return parsed;
+      }
+    } catch (error) {
+      console.warn('Errore nel parsing delle categorie salvate:', error);
+    }
+  }
+
+  return ['Giochi da tavola', 'Videogiochi'];
+}
+
+function saveEnabledCategories() {
+  const toggleButtons = document.querySelectorAll('.toggle-btn');
+  const enabledCategories = Array.from(toggleButtons)
+    .filter((button) => button.classList.contains('active'))
+    .map((button) => button.dataset.category);
+
+  localStorage.setItem('enabledCategories', JSON.stringify(enabledCategories));
 }
 
 function renderGamesPage() {
@@ -35,11 +80,13 @@ function renderGamesPage() {
   }
 
   const selectedPlayers = getSelectedPlayers();
+  const enabledCategories = getEnabledCategories();
   const filteredGames = games.filter((game) => {
     const minPlayers = Number.isFinite(game.minPlayers) ? game.minPlayers : game.players ?? 1;
     const maxPlayers = Number.isFinite(game.maxPlayers) ? game.maxPlayers : game.players ?? minPlayers;
+    const matchesCategory = enabledCategories.includes(game.category);
 
-    return selectedPlayers >= minPlayers && selectedPlayers <= maxPlayers;
+    return matchesCategory && selectedPlayers >= minPlayers && selectedPlayers <= maxPlayers;
   });
 
   if (title) {

@@ -44,6 +44,27 @@ p {
   margin: 2rem 0;
 }
 
+.toggle-group {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.toggle-btn {
+  background: #1e293b;
+  color: #e2e8f0;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 0.8rem 1.2rem;
+}
+
+.toggle-btn.active {
+  background: #facc15;
+  color: #111827;
+  box-shadow: 0 10px 20px rgba(250, 204, 21, 0.35);
+}
+
 #playersRange {
   flex: 1;
   accent-color: #facc15;
