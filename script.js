@@ -69,6 +69,7 @@ function renderGamesPage() {
       <img src="${game.image}" alt="${game.title}" />
       <div class="card-content">
         <span class="tag">${game.tag}</span>
+        <p class="category">${game.category}</p>
         <h3>${game.title}</h3>
         <p>${game.description}</p>
       </div>
@@ -109,6 +110,7 @@ function renderGameDetailsPage() {
       <div class="details-content">
         <span class="tag">${game.tag}</span>
         <h1>${game.title}</h1>
+        <p><strong>Categoria:</strong> ${game.category}</p>
         <p>${game.description}</p>
         <p><strong>Giocatori:</strong> ${playersText}</p>
         <a href="${detailsLink}" class="details-link" target="_blank" rel="noopener noreferrer">Apri collegamento</a>
