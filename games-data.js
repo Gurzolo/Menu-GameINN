@@ -13,7 +13,7 @@ const games = [
   {
     id: 'uno',
     title: 'Uno',
-    image: 'https://images.unsplash.com/photo-1611996575749-79a3a250f4f6?auto=format&fit=crop&w=900&q=80',
+    image: 'immagini/Uno.jpg',
     description: 'Un gioco veloce e divertente da giocare in gruppo, perfetto per riunioni e serate.',
     tag: 'Famiglia',
     minPlayers: 2,
@@ -23,7 +23,7 @@ const games = [
   {
     id: 'scacchi',
     title: 'Scacchi',
-    image: 'https://images.unsplash.com/photo-1528819622761-6bcf032f9d8f?auto=format&fit=crop&w=900&q=80',
+    image: 'immagini/schacchi.jpg',
     description: 'Un classico per mettere alla prova logica, pianificazione e controllo della partita.',
     tag: 'Pensiero',
     minPlayers: 2,
@@ -33,7 +33,7 @@ const games = [
   {
     id: 'dixit-odyssey',
     title: 'Dixit Odyssey',
-    image: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=80',
+    image: 'immagini/Dixit Odyssey.jpg',
     description: 'Un gioco creativo che combina immagini, interpretazione e racconti originali.',
     tag: 'Creatività',
     minPlayers: 3,
@@ -43,7 +43,7 @@ const games = [
   {
     id: 'carcassonne',
     title: 'Carcassonne',
-    image: 'https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=900&q=80',
+    image: 'immagini/Carcassonne.jpg',
     description: 'Costruisci paesaggi, piazza seguaci e conquista territori in una partita tattica e visiva.',
     tag: 'Tattica',
     minPlayers: 2,
@@ -53,7 +53,7 @@ const games = [
   {
     id: 'ticket-to-ride',
     title: 'Ticket to Ride',
-    image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=900&q=80',
+    image: 'immagini/ticketo to ride.jpg',
     description: 'Collega città e costruisci rotte in questa partita di pianificazione e strategia.',
     tag: 'Percorsi',
     minPlayers: 3,
