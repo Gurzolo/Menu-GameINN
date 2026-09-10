@@ -9,7 +9,7 @@ const games = [
     minPlayers: 3,
     maxPlayers: 4,
     link: 'game-details.html?id=catan',
-    pdfLink: 'regolamenti/regolamento%20catan.pdf'
+    pdfLink: 'regolamenti/Catan%20ITA.pdf'
   },
   {
     id: 'uno',
