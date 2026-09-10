@@ -11,6 +11,9 @@
       <h1>Quanti giocatori?</h1>
 
       <div class="slider-wrap">
+        <div class="value-box">
+          <span id="playersValue">1</span>
+        </div>
         <label for="playersRange" class="sr-only">Numero di giocatori</label>
         <input
           id="playersRange"
@@ -18,11 +21,8 @@
           min="1"
           max="12"
           step="1"
-          value="4"
+          value="1"
         />
-        <div class="value-box">
-          <span id="playersValue">4</span>
-        </div>
       </div>
 
       <div class="toggle-group">
@@ -44,9 +44,11 @@
         </button>
       </div>
 
-      <div class="toggle-group">
+      <div class="home-actions">
+        <button id="showAllGamesBtn" type="button" class="metal-btn">
+          Vedi tutti i giochi
+        </button>
         <button id="confirmBtn" type="button">Cerca</button>
-        <button id="showAllGamesBtn" type="button">Vedi tutti i giochi</button>
       </div>
     </main>
 
