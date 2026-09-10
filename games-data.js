@@ -20,7 +20,8 @@ const games = [
     category: 'Giochi da tavola',
     minPlayers: 2,
     maxPlayers: 10,
-    link: 'game-details.html?id=uno'
+    link: 'game-details.html?id=uno',
+    pdfLink: 'regolamenti/UNO.pdf'
   },
   {
     id: 'scacchi',
@@ -31,7 +32,8 @@ const games = [
     category: 'Giochi da tavola',
     minPlayers: 2,
     maxPlayers: 2,
-    link: 'game-details.html?id=scacchi'
+    link: 'game-details.html?id=scacchi',
+    pdfLink: 'regolamenti/schacchi.pdf'
   },
   {
     id: 'dixit-odyssey',
@@ -42,7 +44,8 @@ const games = [
     category: 'Giochi da tavola',
     minPlayers: 3,
     maxPlayers: 12,
-    link: 'game-details.html?id=dixit-odyssey'
+    link: 'game-details.html?id=dixit-odyssey',
+    pdfLink: 'regolamenti/Dixit%20Odyssey.pdf'
   },
   {
     id: 'carcassonne',
@@ -53,7 +56,8 @@ const games = [
     category: 'Giochi da tavola',
     minPlayers: 2,
     maxPlayers: 5,
-    link: 'game-details.html?id=carcassonne'
+    link: 'game-details.html?id=carcassonne',
+    pdfLink: 'regolamenti/Carcassonne.pdf'
   },
   {
     id: 'ticket-to-ride',
@@ -64,7 +68,8 @@ const games = [
     category: 'Giochi da tavola',
     minPlayers: 3,
     maxPlayers: 5,
-    link: 'game-details.html?id=ticket-to-ride'
+    link: 'game-details.html?id=ticket-to-ride',
+    pdfLink: 'regolamenti/ticket%20to%20ride.pdf'
   },
   {
     id: 'mario-kart-8',
