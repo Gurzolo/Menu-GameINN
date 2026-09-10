@@ -8,7 +8,10 @@ body {
   display: grid;
   place-items: center;
   font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(135deg, #0f172a, #1d4ed8);
+  background:
+    linear-gradient(rgba(70, 11, 14, 0.6), rgba(70, 11, 14, 0.6)),
+    url('immagini/GameInn Logo Vettoriale-1.png') center/contain no-repeat fixed,
+    #460b0e;
   color: #f8fafc;
 }
 
