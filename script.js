@@ -92,15 +92,22 @@ function renderGamesPage() {
   const selectedPlayers = getSelectedPlayers();
   const enabledCategories = getEnabledCategories();
   const showAllGames = localStorage.getItem('showAllGames') === 'true';
-  const filteredGames = showAllGames
-    ? games
-    : games.filter((game) => {
-        const minPlayers = Number.isFinite(game.minPlayers) ? game.minPlayers : game.players ?? 1;
-        const maxPlayers = Number.isFinite(game.maxPlayers) ? game.maxPlayers : game.players ?? minPlayers;
-        const matchesCategory = enabledCategories.includes(game.category);
+  const filteredGames = games.filter((game) => {
+    const matchesCategory = enabledCategories.includes(game.category);
 
-        return matchesCategory && selectedPlayers >= minPlayers && selectedPlayers <= maxPlayers;
-      });
+    if (!matchesCategory) {
+      return false;
+    }
+
+    if (showAllGames) {
+      return true;
+    }
+
+    const minPlayers = Number.isFinite(game.minPlayers) ? game.minPlayers : game.players ?? 1;
+    const maxPlayers = Number.isFinite(game.maxPlayers) ? game.maxPlayers : game.players ?? minPlayers;
+
+    return selectedPlayers >= minPlayers && selectedPlayers <= maxPlayers;
+  });
 
   if (title) {
     title.textContent = showAllGames ? 'Tutti i giochi disponibili' : `Giochi per ${selectedPlayers} giocatori`;
