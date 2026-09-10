@@ -2,6 +2,7 @@ function initHomePage() {
   const playersRange = document.getElementById('playersRange');
   const playersValue = document.getElementById('playersValue');
   const confirmBtn = document.getElementById('confirmBtn');
+  const showAllGamesBtn = document.getElementById('showAllGamesBtn');
   const toggleButtons = document.querySelectorAll('.toggle-btn');
 
   if (!playersRange || !playersValue || !confirmBtn) {
@@ -34,9 +35,18 @@ function initHomePage() {
   confirmBtn.addEventListener('click', () => {
     const selectedPlayers = Number(playersRange.value);
     localStorage.setItem('selectedPlayers', String(selectedPlayers));
+    localStorage.setItem('showAllGames', 'false');
     saveEnabledCategories();
     window.location.href = 'games.html';
   });
+
+  if (showAllGamesBtn) {
+    showAllGamesBtn.addEventListener('click', () => {
+      localStorage.setItem('showAllGames', 'true');
+      saveEnabledCategories();
+      window.location.href = 'games.html';
+    });
+  }
 }
 
 function getSelectedPlayers() {
@@ -81,16 +91,19 @@ function renderGamesPage() {
 
   const selectedPlayers = getSelectedPlayers();
   const enabledCategories = getEnabledCategories();
-  const filteredGames = games.filter((game) => {
-    const minPlayers = Number.isFinite(game.minPlayers) ? game.minPlayers : game.players ?? 1;
-    const maxPlayers = Number.isFinite(game.maxPlayers) ? game.maxPlayers : game.players ?? minPlayers;
-    const matchesCategory = enabledCategories.includes(game.category);
+  const showAllGames = localStorage.getItem('showAllGames') === 'true';
+  const filteredGames = showAllGames
+    ? games
+    : games.filter((game) => {
+        const minPlayers = Number.isFinite(game.minPlayers) ? game.minPlayers : game.players ?? 1;
+        const maxPlayers = Number.isFinite(game.maxPlayers) ? game.maxPlayers : game.players ?? minPlayers;
+        const matchesCategory = enabledCategories.includes(game.category);
 
-    return matchesCategory && selectedPlayers >= minPlayers && selectedPlayers <= maxPlayers;
-  });
+        return matchesCategory && selectedPlayers >= minPlayers && selectedPlayers <= maxPlayers;
+      });
 
   if (title) {
-    title.textContent = `Giochi per ${selectedPlayers} giocatori`;
+    title.textContent = showAllGames ? 'Tutti i giochi disponibili' : `Giochi per ${selectedPlayers} giocatori`;
   }
 
   list.innerHTML = '';
