@@ -74,7 +74,7 @@ const games = [
   {
     id: 'mario-kart-8',
     title: 'Mario Kart 8',
-    image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=900&q=80',
+    image: 'immagini/Mario kart 8.jpg',
     description: 'Una gara frenetica con kart, item e circuiti famosi, perfetta per sfide veloci e divertenti.',
     tag: 'Corse',
     category: 'Videogiochi',
@@ -85,7 +85,7 @@ const games = [
   {
     id: 'mario-kart-world',
     title: 'Mario Kart World',
-    image: 'https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=900&q=80',
+    image: 'immagini/Mario kart world.png',
     description: 'Un nuovo capitolo di Mario Kart con percorsi dinamici, velocità elevate e gare da non perdere.',
     tag: 'Corse',
     category: 'Videogiochi',
@@ -96,7 +96,7 @@ const games = [
   {
     id: 'mario-party-jamboree',
     title: 'Mario Party Jamboree',
-    image: 'https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?auto=format&fit=crop&w=900&q=80',
+    image: 'immagini/Mario Party jamboree.png',
     description: 'Una raccolta di minigiochi colorati e frizzanti dove ogni round può cambiare il risultato della partita.',
     tag: 'Party',
     category: 'Videogiochi',
@@ -107,7 +107,7 @@ const games = [
   {
     id: 'mario-party',
     title: 'Mario Party',
-    image: 'https://images.unsplash.com/photo-1599420186946-7b6fb4e297f0?auto=format&fit=crop&w=900&q=80',
+    image: 'immagini/Mario Party.png',
     description: 'Un classico party game con tabellone, minigiochi e tante strategie per conquistare le stelle.',
     tag: 'Party',
     category: 'Videogiochi',
@@ -118,7 +118,7 @@ const games = [
   {
     id: 'super-smash-bros-ultimate',
     title: 'Super Smash Bros Ultimate',
-    image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=900&q=80',
+    image: 'immagini/Super Smash bros ultimate.png',
     description: 'Un picchiaduro accessibile e competitivo, ideale per sfide veloci tra amici e famiglie.',
     tag: 'Picchiaduro',
     category: 'Videogiochi',
@@ -129,7 +129,7 @@ const games = [
   {
     id: 'nidhogg',
     title: 'Nidhogg',
-    image: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=900&q=80',
+    image: 'immagini/Niddhog 2.png',
     description: 'Un duello rapido e intensissimo, dove il movimento, il tempo e l’anticipo fanno la differenza.',
     tag: 'Duello',
     category: 'Videogiochi',
@@ -140,7 +140,7 @@ const games = [
   {
     id: 'vagante',
     title: 'Vagante',
-    image: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=900&q=80',
+    image: 'immagini/Vagante.png',
     description: 'Un gioco di esplorazione e sopravvivenza che mette alla prova resistenza, pianificazione e fortuna.',
     tag: 'Avventura',
     category: 'Videogiochi',
@@ -151,7 +151,7 @@ const games = [
   {
     id: 'hidden-in-plain-sight',
     title: 'Hidden in plain sight',
-    image: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=80',
+    image: 'immagini/hidden in plain sigth.png',
     description: 'Un gioco di intuizione e osservazione, perfetto per partite leggere e molto coinvolgenti.',
     tag: 'Strategia',
     category: 'Videogiochi',
@@ -162,7 +162,7 @@ const games = [
   {
     id: 'letal-league-blaze',
     title: 'Letal League Blaze',
-    image: 'https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=900&q=80',
+    image: 'immagini/Letal League Blaze.jpg',
     description: 'Un videogioco competitivo e rapido, pensato per partite intense e battaglie ad alta velocità.',
     tag: 'Competitivo',
     category: 'Videogiochi',
