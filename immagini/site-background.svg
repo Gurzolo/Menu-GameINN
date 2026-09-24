@@ -1,0 +1,18 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#3A0F12"/>
+  <g opacity="0.98">
+    <path d="M800 250L1030 380V620L800 750L570 620V380L800 250Z" fill="#7D1D1C" stroke="#DDAA23" stroke-width="10"/>
+    <path d="M800 300L984 410V590L800 700L616 590V410L800 300Z" fill="#6B1718" stroke="#E0AE27" stroke-width="6"/>
+    <path d="M800 314L935 401V578L800 663L665 578V401L800 314Z" fill="#7D1D1C"/>
+    <text x="800" y="460" text-anchor="middle" fill="#F0E7D0" font-size="94" font-family="Georgia, 'Times New Roman', serif" font-weight="700" letter-spacing="2">GAME</text>
+    <text x="800" y="585" text-anchor="middle" fill="#F0E7D0" font-size="118" font-family="Georgia, 'Times New Roman', serif" font-weight="700">INN</text>
+    <g opacity="0.9">
+      <path d="M711 591L785 560L760 518H840L815 560L890 591L800 618L711 591Z" fill="#F2EED8"/>
+      <path d="M738 632H862V648H738V632Z" fill="#F2EED8"/>
+      <path d="M800 610L822 637H778L800 610Z" fill="#F2EED8"/>
+      <circle cx="736" cy="512" r="11" fill="#F2EED8"/>
+      <circle cx="864" cy="512" r="11" fill="#F2EED8"/>
+      <rect x="729" y="500" width="142" height="24" rx="6" fill="#F2EED8" opacity="0.75"/>
+    </g>
+  </g>
+</svg>
