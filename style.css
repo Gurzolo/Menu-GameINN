@@ -8,7 +8,7 @@ body {
   display: grid;
   place-items: center;
   font-family: Arial, Helvetica, sans-serif;
-  background: #3b0d10 url('immagini/site-background.svg') center/cover no-repeat fixed;
+  background: #3b0d10 url('immagini/GameINN logo.png') center/cover no-repeat fixed;
   color: #f8fafc;
 }
 
