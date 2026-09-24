@@ -179,7 +179,8 @@ const games = [
     category: 'Giochi da tavola',
     minPlayers: 3,
     maxPlayers: 8,
-    link: 'game-details.html?id=dany'
+    link: 'game-details.html?id=dany',
+    pdfLink: 'regolamenti/Dany.pdf'
   },
   {
     id: 'risiko-spqr',
@@ -190,7 +191,8 @@ const games = [
     category: 'Giochi da tavola',
     minPlayers: 2,
     maxPlayers: 5,
-    link: 'game-details.html?id=risiko-spqr'
+    link: 'game-details.html?id=risiko-spqr',
+    pdfLink: 'regolamenti/Regolamento%20spqrisiko.pdf'
   },
   {
     id: 'cranium',
@@ -201,7 +203,8 @@ const games = [
     category: 'Giochi da tavola',
     minPlayers: 4,
     maxPlayers: 12,
-    link: 'game-details.html?id=cranium'
+    link: 'game-details.html?id=cranium',
+    pdfLink: 'regolamenti/Cranium.pdf'
   },
   {
     id: 'exploding-kittens',
@@ -223,7 +226,8 @@ const games = [
     category: 'Giochi da tavola',
     minPlayers: 2,
     maxPlayers: 4,
-    link: 'game-details.html?id=scarabeo'
+    link: 'game-details.html?id=scarabeo',
+    pdfLink: 'regolamenti/scarabeo.pdf'
   },
   {
     id: 'squillo',
@@ -234,7 +238,8 @@ const games = [
     category: 'Giochi da tavola',
     minPlayers: 2,
     maxPlayers: 5,
-    link: 'game-details.html?id=squillo'
+    link: 'game-details.html?id=squillo',
+    pdfLink: 'regolamenti/Squillo.pdf'
   },
   {
     id: 'pictonary',
@@ -256,7 +261,8 @@ const games = [
     category: 'Giochi da tavola',
     minPlayers: 4,
     maxPlayers: 12,
-    link: 'game-details.html?id=taboo'
+    link: 'game-details.html?id=taboo',
+    pdfLink: 'regolamenti/taboo.pdf'
   },
   {
     id: 'ligretto',
@@ -278,7 +284,8 @@ const games = [
     category: 'Giochi da tavola',
     minPlayers: 2,
     maxPlayers: 6,
-    link: 'game-details.html?id=here-to-slay'
+    link: 'game-details.html?id=here-to-slay',
+    pdfLink: 'regolamenti/here%20to%20slay.pdf'
   },
   {
     id: 'nome-in-codice',
@@ -289,7 +296,8 @@ const games = [
     category: 'Giochi da tavola',
     minPlayers: 4,
     maxPlayers: 8,
-    link: 'game-details.html?id=nome-in-codice'
+    link: 'game-details.html?id=nome-in-codice',
+    pdfLink: 'regolamenti/Nome%20in%20codice.pdf'
   },
   {
     id: 'what-do-you-meme',
@@ -300,7 +308,8 @@ const games = [
     category: 'Giochi da tavola',
     minPlayers: 4,
     maxPlayers: 10,
-    link: 'game-details.html?id=what-do-you-meme'
+    link: 'game-details.html?id=what-do-you-meme',
+    pdfLink: 'regolamenti/what%20do%20you%20meme.pdf'
   },
   {
     id: 'tre-draghi-al-buio',
@@ -311,7 +320,8 @@ const games = [
     category: 'Giochi da tavola',
     minPlayers: 2,
     maxPlayers: 6,
-    link: 'game-details.html?id=tre-draghi-al-buio'
+    link: 'game-details.html?id=tre-draghi-al-buio',
+    pdfLink: 'regolamenti/tre%20draghi%20al%20buio.pdf'
   },
   {
     id: 'horse-fever',
@@ -333,7 +343,8 @@ const games = [
     category: 'Giochi da tavola',
     minPlayers: 2,
     maxPlayers: 8,
-    link: 'game-details.html?id=unstable-unicorns'
+    link: 'game-details.html?id=unstable-unicorns',
+    pdfLink: 'regolamenti/unstable%20unicorns.pdf'
   },
   {
     id: 'happy-salmon',
@@ -344,7 +355,8 @@ const games = [
     category: 'Giochi da tavola',
     minPlayers: 3,
     maxPlayers: 8,
-    link: 'game-details.html?id=happy-salmon'
+    link: 'game-details.html?id=happy-salmon',
+    pdfLink: 'regolamenti/happy%20salmon.pdf'
   },
   {
     id: 'maze-scape',
@@ -377,6 +389,7 @@ const games = [
     category: 'Giochi da tavola',
     minPlayers: 2,
     maxPlayers: 6,
-    link: 'game-details.html?id=cluedo'
+    link: 'game-details.html?id=cluedo',
+    pdfLink: 'regolamenti/Cluedo.pdf'
   },
 ];

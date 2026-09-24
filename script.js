@@ -180,7 +180,7 @@ function renderGameDetailsPage() {
         <p><strong>Categoria:</strong> ${game.category}</p>
         <p>${game.description}</p>
         <p><strong>Giocatori:</strong> ${playersText}</p>
-        <a href="${detailsLink}" class="details-link" target="_blank" rel="noopener noreferrer">Apri collegamento</a>
+        <a href="${detailsLink}" class="details-link" target="_blank" rel="noopener noreferrer">Regolamento</a>
       </div>
     </div>
   `;
