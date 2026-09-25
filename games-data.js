@@ -173,7 +173,7 @@ const games = [
   {
     id: 'dany',
     title: 'Dany',
-    image: 'immagini/GameINN Tappetino x5.png',
+    image: 'immagini/Dani.png',
     description: 'Un gioco da tavolo coinvolgente e adatto a gruppi di varie dimensioni.',
     tag: 'Party',
     category: 'Giochi da tavola',
@@ -185,7 +185,7 @@ const games = [
   {
     id: 'risiko-spqr',
     title: 'Risiko S.P.Q.R.',
-    image: 'immagini/GameINN Tappetino x5.png',
+    image: 'immagini/SPQRisiko.jpg',
     description: 'Conquista territori, pianifica mosse e domina la tavola con strategia e fortuna.',
     tag: 'Strategia',
     category: 'Giochi da tavola',
@@ -197,7 +197,7 @@ const games = [
   {
     id: 'cranium',
     title: 'Cranium',
-    image: 'immagini/GameINN Tappetino x5.png',
+    image: 'immagini/Cranium.jpg',
     description: 'Arte, parole, disegno e pensiero creativo in un gioco dinamico e coinvolgente.',
     tag: 'Creatività',
     category: 'Giochi da tavola',
@@ -209,7 +209,7 @@ const games = [
   {
     id: 'exploding-kittens',
     title: 'Explodin Kitten',
-    image: 'immagini/GameINN Tappetino x5.png',
+    image: 'immagini/Exploding Kittens.jpg',
     description: 'Una partita veloce e piena di bluff, azione e reazioni improvvise.',
     tag: 'Party',
     category: 'Giochi da tavola',
@@ -220,7 +220,7 @@ const games = [
   {
     id: 'scarabeo',
     title: 'Scarabeo',
-    image: 'immagini/GameINN Tappetino x5.png',
+    image: 'immagini/Scarabeo.jpg',
     description: 'Un classico del lessico e dell’abilità di combinazione tra parole e punti.',
     tag: 'Parole',
     category: 'Giochi da tavola',
@@ -232,7 +232,7 @@ const games = [
   {
     id: 'squillo',
     title: 'Squillo',
-    image: 'immagini/GameINN Tappetino x5.png',
+    image: 'immagini/Squillo.jpg',
     description: 'Un gioco semplice ma sempre divertente da giocare tra amici e familiari.',
     tag: 'Famiglia',
     category: 'Giochi da tavola',
@@ -244,7 +244,7 @@ const games = [
   {
     id: 'pictonary',
     title: 'Pictonary',
-    image: 'immagini/GameINN Tappetino x5.png',
+    image: 'immagini/Pictonary.jpg',
     description: 'Disegna, indovina e fai ridere il tavolo con un gioco di interpretazione visiva.',
     tag: 'Creatività',
     category: 'Giochi da tavola',
@@ -255,7 +255,7 @@ const games = [
   {
     id: 'taboo',
     title: 'Taboo',
-    image: 'immagini/GameINN Tappetino x5.png',
+    image: 'immagini/taboo.png',
     description: 'Fai descrizioni senza usare parole vietate e prova a far indovinare i compagni.',
     tag: 'Parole',
     category: 'Giochi da tavola',
@@ -267,7 +267,7 @@ const games = [
   {
     id: 'ligretto',
     title: 'Ligretto',
-    image: 'immagini/GameINN Tappetino x5.png',
+    image: 'immagini/ligretto.jpg',
     description: 'Un gioco veloce, vivace e perfetto per partite di gruppo ad alta energia.',
     tag: 'Velocità',
     category: 'Giochi da tavola',
@@ -278,7 +278,7 @@ const games = [
   {
     id: 'here-to-slay',
     title: 'Here to Slay',
-    image: 'immagini/GameINN Tappetino x5.png',
+    image: 'immagini/here to slay.jpg',
     description: 'Partita di bluff, battaglie e deduzioni in un gioco molto dinamico.',
     tag: 'Party',
     category: 'Giochi da tavola',
@@ -290,7 +290,7 @@ const games = [
   {
     id: 'nome-in-codice',
     title: 'Nome in codice',
-    image: 'immagini/GameINN Tappetino x5.png',
+    image: 'immagini/nome in codice.jpg',
     description: 'Svela i codici del tuo team e coordina i messaggi per raggiungere l’obiettivo.',
     tag: 'Team',
     category: 'Giochi da tavola',
@@ -302,7 +302,7 @@ const games = [
   {
     id: 'what-do-you-meme',
     title: 'What do you meme',
-    image: 'immagini/GameINN Tappetino x5.png',
+    image: 'immagini/what do you meme.jpg',
     description: 'Un party game con meme, battute e scelte decisamente imprevedibili.',
     tag: 'Humor',
     category: 'Giochi da tavola',
@@ -314,7 +314,7 @@ const games = [
   {
     id: 'tre-draghi-al-buio',
     title: 'Tre draghi al buio',
-    image: 'immagini/GameINN Tappetino x5.png',
+    image: 'immagini/tre draghi al buio.jpg',
     description: 'Un gioco di deduzione e gestione risorse in cui ogni scelta conta.',
     tag: 'Strategia',
     category: 'Giochi da tavola',
@@ -326,7 +326,7 @@ const games = [
   {
     id: 'horse-fever',
     title: 'Horse fever',
-    image: 'immagini/GameINN Tappetino x5.png',
+    image: 'immagini/horse fever.jpg',
     description: 'Partite rapide e coinvolgenti in cui la fortuna e la gestione del rischio sono decisive.',
     tag: 'Azione',
     category: 'Giochi da tavola',
@@ -337,7 +337,7 @@ const games = [
   {
     id: 'unstable-unicorns',
     title: 'Unstable Unicorns',
-    image: 'immagini/GameINN Tappetino x5.png',
+    image: 'immagini/Unstable Unicorns.jpg',
     description: 'Colleziona unicorni, crea combinazioni e cerca di restare in gioco fino alla fine.',
     tag: 'Carte',
     category: 'Giochi da tavola',
@@ -349,7 +349,7 @@ const games = [
   {
     id: 'happy-salmon',
     title: 'Happy Salmon',
-    image: 'immagini/GameINN Tappetino x5.png',
+    image: 'immagini/happy salmon.jpg',
     description: 'Un party game veloce e caotico, perfetto per coinvolgere tutto il gruppo.',
     tag: 'Party',
     category: 'Giochi da tavola',
@@ -361,7 +361,7 @@ const games = [
   {
     id: 'maze-scape',
     title: 'Maze Scape',
-    image: 'immagini/GameINN Tappetino x5.png',
+    image: 'immagini/maze scape.jpg',
     description: 'Un gioco di percorsi e decisioni con un’esplorazione semplice ma tattica.',
     tag: 'Puzzle',
     category: 'Giochi da tavola',
@@ -372,7 +372,7 @@ const games = [
   {
     id: 'forza-4',
     title: 'Forza 4',
-    image: 'immagini/GameINN Tappetino x5.png',
+    image: 'immagini/forza 4.jpg',
     description: 'Un classico strategico a turni in cui la pianificazione porta alla vittoria.',
     tag: 'Strategia',
     category: 'Giochi da tavola',
@@ -383,7 +383,7 @@ const games = [
   {
     id: 'cluedo',
     title: 'Cluedo',
-    image: 'immagini/GameINN Tappetino x5.png',
+    image: 'immagini/Cluedo.jpg',
     description: 'Spia, deduci e risolvi il caso in una partita di logica e osservazione.',
     tag: 'Deduzione',
     category: 'Giochi da tavola',
